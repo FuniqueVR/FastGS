@@ -39,9 +39,6 @@ RUN pip3 install --no-cache-dir "numpy<2"
 # Copy the rest of the application code (including submodules)
 COPY . /workspace
 
-# Install the standard python requirements
-RUN if [ -f requirements.txt ]; then pip3 install --no-cache-dir -r requirements.txt; fi
-
 # Compile and install custom FastGS CUDA submodules
 RUN pip3 install --no-build-isolation submodules/diff-gaussian-rasterization_fastgs/
 RUN pip3 install --no-build-isolation submodules/simple-knn/
