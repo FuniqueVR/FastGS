@@ -47,5 +47,10 @@ RUN pip3 install --no-build-isolation submodules/diff-gaussian-rasterization_fas
 RUN pip3 install --no-build-isolation submodules/simple-knn/
 RUN pip3 install --no-build-isolation submodules/fused-ssim/
 
+RUN pip3 install plyfile
+RUN pip3 install websockets
+RUN pip3 install tqdm
+RUN pip3 install "numpy<2"
+
 # Default command to verify installation or start training
 CMD ["python3", "train.py", "-h"]
