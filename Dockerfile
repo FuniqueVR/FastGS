@@ -39,6 +39,8 @@ RUN pip3 install --no-cache-dir "numpy<2"
 # Copy the rest of the application code (including submodules)
 COPY . /workspace
 
+ENV MAX_JOBS=2
+
 # Compile and install custom FastGS CUDA submodules
 RUN pip3 install --no-build-isolation submodules/diff-gaussian-rasterization_fastgs/
 RUN pip3 install --no-build-isolation submodules/diff-plane-rasterization/
