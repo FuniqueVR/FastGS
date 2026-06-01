@@ -1,1 +1,2 @@
-docker run --gpus all -it --rm --shm-size=8g -v "$(pwd)":/workspace fastgs-image /bin/bash
+@echo off
+docker run --gpus all -it --rm --shm-size=8g -v "%cd%":/workspace fastgs-image /bin/bash
