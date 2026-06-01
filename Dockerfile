@@ -49,6 +49,11 @@ RUN pip3 install plyfile
 RUN pip3 install websockets
 RUN pip3 install tqdm
 RUN pip3 install "numpy<2"
+RUN pip3 install open3d
+RUN pip3 install pytorch3d
+RUN pip3 install opencv-python
+RUN pip3 install lpips
+RUN pip3 install trimesh
 
 # Default command to verify installation or start training
 CMD ["python3", "train.py", "-h"]
