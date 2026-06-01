@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it --gpus all --rm --shm-size=8g fastgs-inmage-fast-pgsr /bin/bash
+sudo docker run --gpus all -it --rm --shm-size=8g -v "$(pwd)":/workspace fastgs-image-fast-pgsr /bin/bash

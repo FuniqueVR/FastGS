@@ -1,3 +1,3 @@
-#!/bin/bash
-mkdir -p share
+@echo off
+mkdir share
 docker build -t fastgs-image-fast-pgsr .
